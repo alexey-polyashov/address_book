@@ -13,10 +13,10 @@ public class Person {
 
     @GeneratedValue
     @Id
-    private Long id;
+    @Column(name="person_id", nullable = false)
+    private Long personId;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id")
+    @ManyToOne
     private Department department;
 
     @Column

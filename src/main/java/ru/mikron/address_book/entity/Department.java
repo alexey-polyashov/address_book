@@ -11,8 +11,8 @@ public final class Department {
 
     @Id
     @GeneratedValue()
-    @Column(name="id", nullable = false)
-    private Long id;
+    @Column(name="department_id", nullable = false)
+    private Long departmentId;
 
     @Column
     private String code;
@@ -24,9 +24,11 @@ public final class Department {
     @ManyToOne
     private Department parent;
 
-    @OneToMany(mappedBy = "department")
+    @OneToMany
+    @JoinColumn(name="department_id")
     private List<Person> employees;
 
     @OneToOne
+    @JoinColumn(name = "head_id")
     private Person head;
 }
