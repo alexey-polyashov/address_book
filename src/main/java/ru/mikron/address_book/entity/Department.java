@@ -25,7 +25,7 @@ public final class Department {
     private Department parent;
 
     @OneToMany
-    @JoinColumn(name = "employee_id")
+    @JoinColumn(name = "department_id")
     private List<Person> employees;
 
     @OneToOne
