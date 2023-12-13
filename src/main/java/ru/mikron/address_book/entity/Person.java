@@ -17,6 +17,7 @@ public class Person {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "department_id")
     private Department department;
 
     @Column
