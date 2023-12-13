@@ -13,8 +13,8 @@ public class Person {
 
     @GeneratedValue
     @Id
-    @Column(name="person_id", nullable = false)
-    private Long personId;
+    @Column(nullable = false)
+    private Long id;
 
     @ManyToOne
     private Department department;
