@@ -15,7 +15,8 @@ public class Person {
     @Id
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id")
     private Department department;
 
     @Column

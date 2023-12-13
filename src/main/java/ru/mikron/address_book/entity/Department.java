@@ -24,11 +24,9 @@ public final class Department {
     @ManyToOne
     private Department parent;
 
-    @OneToMany
-    @JoinColumn(name = "department_id")
+    @OneToMany(mappedBy = "department")
     private List<Person> employees;
 
     @OneToOne
-    @JoinColumn(name = "head_id")
     private Person head;
 }
