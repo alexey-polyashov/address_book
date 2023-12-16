@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import ru.mikron.address_book.utility.DataType;
 
 @Entity
 @Getter
@@ -15,6 +16,9 @@ public class Person {
     @Id
     @Column(nullable = false)
     private Long id;
+
+    @Column(columnDefinition = "varchar(255) default 'PERSON'")
+    private DataType dataType;
 
     @ManyToOne
     @JoinColumn(name = "department_id")

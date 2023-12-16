@@ -2,6 +2,7 @@ package ru.mikron.address_book.entity;
 
 import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
+import ru.mikron.address_book.utility.DataType;
 
 import java.util.List;
 
@@ -13,6 +14,9 @@ public final class Department {
     @GeneratedValue()
     @Column(nullable = false)
     private Long id;
+
+    @Column(columnDefinition = "varchar(255) default 'DEPARTMENT'")
+    private DataType dataType;
 
     @Column
     private String code;
