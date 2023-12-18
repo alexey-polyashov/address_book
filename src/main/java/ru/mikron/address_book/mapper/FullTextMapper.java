@@ -3,8 +3,7 @@ package ru.mikron.address_book.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import ru.mikron.address_book.entity.FullTextIndex;
-import ru.mikron.address_book.entity.FullTextResult;
-import ru.mikron.address_book.entity.FullTextResults;
+import ru.mikron.address_book.dto.FullTextResult;
 
 @Mapper(componentModel = "spring")
 public interface FullTextMapper {

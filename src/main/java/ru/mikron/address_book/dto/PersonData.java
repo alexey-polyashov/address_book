@@ -9,9 +9,13 @@ import ru.mikron.address_book.entity.Department;
 @Setter
 @NoArgsConstructor
 public class PersonData {
+    private Long id;
     private String tabNumber;
     private String fullName;
+    private String position;
     private String phoneNumber;
     private String email;
-    private Department department;
+    private String managerName;
+    private Department departmentName;
+    private Department departmentId;
 }

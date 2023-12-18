@@ -12,8 +12,10 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class DepartmentData {
+    private Long id;
     private String name;
+    private String code;
     private Department parent;
-    private Person head;
+    private PersonData head;
     List<DepartmentData> subDepartments;
 }

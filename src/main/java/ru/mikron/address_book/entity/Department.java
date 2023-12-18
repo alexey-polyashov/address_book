@@ -1,6 +1,8 @@
 package ru.mikron.address_book.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import ru.mikron.address_book.utility.DataType;
 
@@ -8,6 +10,7 @@ import java.util.List;
 
 @Entity
 @NoArgsConstructor
+@Data
 public final class Department {
 
     @Id
@@ -28,7 +31,7 @@ public final class Department {
     @ManyToOne
     private Department parent;
 
-    @OneToMany(mappedBy = "department")
+    @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
     private List<Person> employees;
 
     @OneToOne

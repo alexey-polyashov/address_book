@@ -1,14 +1,14 @@
 package ru.mikron.address_book.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import ru.mikron.address_book.utility.DataType;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 public class Person {
 

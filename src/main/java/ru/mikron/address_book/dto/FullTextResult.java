@@ -1,4 +1,4 @@
-package ru.mikron.address_book.entity;
+package ru.mikron.address_book.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -3,14 +3,13 @@ package ru.mikron.address_book.service;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.mikron.address_book.entity.FullTextIndex;
-import ru.mikron.address_book.entity.FullTextResult;
+import ru.mikron.address_book.dto.FullTextResult;
 import ru.mikron.address_book.mapper.FullTextMapper;
 import ru.mikron.address_book.repository.FullTextRepo;
 import ru.mikron.address_book.utility.DataType;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Service
 @AllArgsConstructor
