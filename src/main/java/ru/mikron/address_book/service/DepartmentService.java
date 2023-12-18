@@ -58,9 +58,8 @@ public class DepartmentService {
 
     public List<Long> collectSunDepartmentsIDs(Long parentId){
         List<DepartmentIDs> depList = departmentRepo.getAllIDs();
-        List<Long> depIDs = new ArrayList<>();
-        depIDs = getDepartmentsIDs(depList, parentId);
-        return  depIDs;
+        getDepartmentsIDs(depList, parentId);
+        return  getDepartmentsIDs(depList, parentId);
     }
 
     public List<PersonData> getEmployees(Long departmentId, Boolean deeply){

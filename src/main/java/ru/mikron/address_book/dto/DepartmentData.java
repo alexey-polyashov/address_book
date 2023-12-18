@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import ru.mikron.address_book.entity.Department;
-import ru.mikron.address_book.entity.Person;
 
 import java.util.List;
 
